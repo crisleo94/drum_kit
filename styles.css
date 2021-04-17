@@ -1,0 +1,43 @@
+body {
+    background-image: url('./img/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    overflow-y: hidden;
+}
+
+.keys {
+    display: grid;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    grid-template-rows: 1fr;
+    place-items: center;
+    min-height: 100vh;
+    grid-column-gap: 50px;
+    grid-template-areas: "key key key key key key";
+}
+
+.key {
+    grid-area: "key";
+    border: solid 2px black;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 10px 5px black;
+}
+
+.playing {
+    grid-area: "key";
+    transform: scale(1.2);
+    border: solid 2px #198754;
+    border-radius: 20px;
+    padding: 10px;
+    transition: all 0.07s;
+    box-shadow: 1px 1px 10px 5px #198754;
+}
+
+.keys .key img {
+    width: 64px;
+    height: 64px;
+}

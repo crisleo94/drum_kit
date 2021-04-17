@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Drum Kit!</title>
+</head>
+<body>
+    <div class="keys">
+        <div data-key="65" class="key">
+            <img src="img/018-flute-1.png" alt="flute">
+            <div class="sound"></div>
+        </div>
+        <div data-key="83" class="key">
+            <img src="img/024-gong.png" alt="gong">
+            <div class="sound"></div>
+        </div>
+        <div data-key="68" class="key">
+            <img src="img/041-horn.png" alt="horn">
+            <div class="sound"></div>
+        </div>
+        <div data-key="70" class="key">
+            <img src="img/036-maracas.png" alt="maracas">
+            <div class="sound"></div>
+        </div>
+        <div data-key="71" class="key">
+            <img src="img/049-drums.png" alt="drums">
+            <div class="sound"></div>
+        </div>
+        <div data-key="72" class="key">
+            <img src="img/034-trumpet.png" alt="trumpet">
+            <div class="sound"></div>
+        </div>
+    </div>
+
+    <audio id="65" data-key="65" src="audio/flute.wav"></audio>
+    <audio id="83" data-key="83" src="audio/gong.wav"></audio>
+    <audio id="68" data-key="83" src="audio/horn.wav"></audio>
+    <audio id="70" data-key="83" src="audio/maraca.wav"></audio>
+    <audio id="71" data-key="83" src="audio/kickdrum.wav"></audio>
+    <audio id="72" data-key="83" src="audio/trumpet.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
